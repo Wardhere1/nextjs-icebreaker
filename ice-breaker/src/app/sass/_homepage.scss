@@ -1,0 +1,24 @@
+body {
+    background-color: $light-mode;
+    color: $font-color-light-mode;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.inner-content-container {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
