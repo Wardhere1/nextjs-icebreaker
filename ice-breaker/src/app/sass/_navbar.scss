@@ -7,3 +7,26 @@
     background-color: $light-mode;
     color: $font-color-light-mode;
 }
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: max-content;
+    border: solid #FF671E;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 1rem;
+
+}
+
+.nav-logo {
+    width: 100px;
+    // height: 60px;
+}
+
+.toggle {
+    font-size: xx-large;
+}

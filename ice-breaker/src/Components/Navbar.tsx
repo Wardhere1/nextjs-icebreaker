@@ -13,11 +13,12 @@ const Navbar: React.FC<NavbarProps> = ({ toggle, setToggle }) => {
   };
 
   return (
-    <div>
+    <div className="navbar-container">
+      <img className="nav-logo" src="easyjet-logo.png"></img>
       {toggle ? (
-        <BsToggleOn onClick={handleToggle} />
+        <BsToggleOn className="toggle" onClick={handleToggle} />
       ) : (
-        <BsToggleOff onClick={handleToggle} />
+        <BsToggleOff className="toggle" onClick={handleToggle} />
       )}
     </div>
   );

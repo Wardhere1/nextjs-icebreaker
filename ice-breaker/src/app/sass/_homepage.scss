@@ -1,24 +1,50 @@
 body {
     background-color: $light-mode;
     color: $font-color-light-mode;
+    height: 100vh;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    // height: 50vh;
 }
 
 .container {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    gap: 20px;
     align-items: center;
+    padding: 5rem 0;
+
 }
 
 .inner-content-container {
     display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    border: solid purple;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.header-con {
+    border: solid blueviolet;
+    margin: 30px;
+}
+
+.plus-sign {
+    display: flex;
+    align-items: center;
+}
+
+.input-fields {
+    display: flex;
     justify-content: space-between;
-    width: 35%;
+    width: 200px;
 }

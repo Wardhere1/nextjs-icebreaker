@@ -1,0 +1,25 @@
+
+paths: "."
+  get:
+    summary: Get the sum of two numbers
+    parameters:
+      - name: arg1
+        in: query
+        schema:
+          type: number
+        required: true
+      - name: arg2
+        in: query
+        schema:
+          type: number
+        required: true
+    responses:
+      "200":
+        description: Successful response
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                sum:
+                  type: number

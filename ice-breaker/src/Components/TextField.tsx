@@ -1,30 +1,30 @@
 import React from "react";
 
 interface TextFieldProps {
-  label: string;
   value: number | "";
-  onChange: (value: number) => void;
-  // error: boolean;
+  onChange: (value: number | string) => void;
+  isValid: boolean;
   type: string;
 }
 
 const TextField: React.FC<TextFieldProps> = ({
-  label,
   value,
   onChange,
-  type,
+  // type,
   // error,
+  isValid,
 }) => {
+  const borderColor = isValid ? "green" : "blue";
+
   return (
-    <div className="text-field-container">
-      <label>{label}</label>
-      <input
-        type="number"
-        placeholder="Enter number 1"
-        value={value}
-        onChange={(e) => onChange(Number(e.target.value))}
-      ></input>
-    </div>
+    <input
+      className="text-field-container"
+      type="number"
+      placeholder="Enter number 1"
+      value={value}
+      onChange={(e) => onChange(e.target.value)}
+      style={{ borderColor }}
+    ></input>
   );
 };
 
