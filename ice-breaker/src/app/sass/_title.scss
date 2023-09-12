@@ -1,9 +1,10 @@
-.Header-container {
-    // border: solid blueviolet;
+.Title-container {
+    // border: solid #409bf0;
+    margin-bottom: 80px;
     transition: 0.5s;
 }
 
-.Header-container:hover {
+.Title-container:hover {
     letter-spacing: 0.25em;
     // box-shadow: 2.5px 5px 10px #409bf0;
     color: rgb(47, 145, 230);

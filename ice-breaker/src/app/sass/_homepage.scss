@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    // gap: 20px;
     align-items: center;
     padding: 5rem 0;
 
@@ -30,12 +30,8 @@ body {
     align-items: center;
     border: solid purple;
     border-radius: 20px;
-    padding: 50px;
-}
-
-.header-con {
-    border: solid blueviolet;
-    margin: 30px;
+    padding: 70px;
+    box-shadow: 5px 10px 10px;
 }
 
 .plus-sign {
@@ -47,4 +43,5 @@ body {
     display: flex;
     justify-content: space-between;
     width: 200px;
+    gap: 5px;
 }

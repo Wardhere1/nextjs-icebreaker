@@ -1,17 +1,11 @@
 import React from "react";
 
 interface HeaderPorps {
-  title: string;
-  subtitle: string;
+  Header: string;
 }
 
-const Header: React.FC<HeaderPorps> = ({ title, subtitle }) => {
-  return (
-    <div className="Header-contiainer">
-      <h1> {title}</h1>
-      {/* <h2> {subtitle} </h2> */}
-    </div>
-  );
+const Header: React.FC<HeaderPorps> = ({ Header }) => {
+  return <h1 className="Header-container">{Header}</h1>;
 };
 
 export default Header;

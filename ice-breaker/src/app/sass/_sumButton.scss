@@ -1,10 +1,21 @@
 .sumButton {
     padding: 5px 10px 5px 10px;
-    border-radius: 50%;
-    height: 80px;
-    width: 80px;
-    background: lightsalmon;
+    border-radius: 5%;
+    height: 50px;
+    width: 200px;
+    background: #F09440;
     // font-weight: bold;
     font-size: $font-size;
     text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.6s;
+
+}
+
+.sumButton:hover {
+    letter-spacing: 0.25em;
+    box-shadow: 2.5px 5px 10px #F09440;
+    color: aliceblue;
+
 }

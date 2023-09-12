@@ -6,6 +6,7 @@ import Header from "@/Components/Header";
 // import { error } from "console";
 import Navbar from "@/Components/Navbar";
 import SumButton from "@/Components/SumButton";
+import Title from "@/Components/Title";
 
 interface ApiResponse {
   sum: number;
@@ -45,8 +46,9 @@ export default function Home() {
   return (
     <div className={toggle ? "dark-mode container" : "light-mode container"}>
       <Navbar toggle={toggle} setToggle={setToggle} />
+      <Title title="EasyJet Ice-breaker" />
       <div className="inner-content-container">
-        <Header title="EasyJet Ice-breaker" subtitle="Enter your number" />
+        <Header Header="Enter your number" />
         {/* {arg1Error && <p style={{ color: "red" }}>Invalid input</p>} */}
         <div className="input-fields">
           <TextField
@@ -68,7 +70,7 @@ export default function Home() {
           {/* {arg2Error && <p style={{ color: "red" }}>Invalid input</p>} */}
         </div>
         <SumButton
-          label="Calculate Sum"
+          label="Calculate"
           onClick={calculateTotal}
           disabled={!arg1 || !arg2}
           loading={isLoading}

@@ -20,7 +20,7 @@ const TextField: React.FC<TextFieldProps> = ({
     <input
       className="text-field-container"
       type="number"
-      placeholder="Enter number 1"
+      placeholder="number"
       value={value}
       onChange={(e) => onChange(e.target.value)}
       style={{ borderColor }}
