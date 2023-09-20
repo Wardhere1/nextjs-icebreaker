@@ -24,9 +24,25 @@
 
 .nav-logo {
     width: 100px;
-    // height: 60px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.nav-logo:hover {
+    letter-spacing: 0.25em;
+    box-shadow: 2.5px 5px 10px #F09440;
+    color: aliceblue;
+
 }
 
 .toggle {
-    font-size: xx-large;
+    font-size: 32px;
+    transition: 0.5s;
+}
+
+.toggle:hover {
+    letter-spacing: 0.25em;
+    font-size: 40px;
+    color: #F09440;
+    cursor: pointer;
 }

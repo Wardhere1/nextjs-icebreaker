@@ -14,7 +14,9 @@ const Navbar: React.FC<NavbarProps> = ({ toggle, setToggle }) => {
 
   return (
     <div className="navbar-container">
-      <img className="nav-logo" src="easyjet-logo.png"></img>
+      <a href="https://www.easyjet.com/en">
+        <img className="nav-logo" src="easyjet-logo.png"></img>
+      </a>
       {toggle ? (
         <BsToggleOn className="toggle" onClick={handleToggle} />
       ) : (

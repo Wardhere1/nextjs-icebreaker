@@ -1,5 +1,7 @@
 .Header-container {
     // border: solid blueviolet;
+    position: relative;
+    z-index: 10;
     transition: 0.5s;
 }
 

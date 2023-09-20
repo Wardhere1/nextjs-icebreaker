@@ -4,5 +4,15 @@
     height: 90px;
     width: 90px;
     font-size: $font-size;
+    position: relative;
+    z-index: 10;
     text-align: center;
+    transition: 0.5S;
+}
+
+.text-field-container:hover {
+    letter-spacing: 0.25em;
+    box-shadow: 2.5px 5px 10px #F09440;
+    color: aliceblue;
+
 }

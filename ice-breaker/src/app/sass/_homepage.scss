@@ -2,6 +2,7 @@ body {
     background-color: $light-mode;
     color: $font-color-light-mode;
     height: 100vh;
+    transition: 0.5s;
 }
 
 * {
@@ -25,13 +26,45 @@ body {
 .inner-content-container {
     display: flex;
     flex-direction: column;
+    position: relative;
+    // width: 300px;
+    height: 400px;
     gap: 12px;
     justify-content: center;
     align-items: center;
-    border: solid purple;
+    // border: solid purple;
     border-radius: 20px;
     padding: 70px;
-    box-shadow: 5px 10px 10px;
+    // box-shadow: 5px 10px 10px;
+    // background-color: plum;
+    overflow: hidden;
+    border-radius: 33px;
+}
+
+.inner-content-container::before {
+    content: "";
+    position: absolute;
+    width: 170px;
+    height: 180%;
+    background: linear-gradient(#00ccff, #d400d4);
+    animation: animate 4s linear infinite;
+}
+
+.inner-content-container::after {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    background: $light-mode;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(350deg);
+    }
 }
 
 .plus-sign {

@@ -10,7 +10,7 @@ interface TextFieldProps {
 const TextField: React.FC<TextFieldProps> = ({
   value,
   onChange,
-  // type,
+  type,
   // error,
   isValid,
 }) => {
@@ -19,7 +19,7 @@ const TextField: React.FC<TextFieldProps> = ({
   return (
     <input
       className="text-field-container"
-      type="number"
+      type={type}
       placeholder="number"
       value={value}
       onChange={(e) => onChange(e.target.value)}

@@ -55,10 +55,9 @@ export default function Home() {
             // label="Number 1"
             type="Number"
             value={arg1}
-            onChange={(newValue) => setArg1(newValue as "")}
+            onChange={(newValue) => setArg1(newValue as string)}
             isValid={isValid}
           />
-          {/* style={{ borderColor: arg1Error ? "red" : "initial" }} */}
           <h1 className="plus-sign"> + </h1>
           <TextField
             // label="Number 2"
