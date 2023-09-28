@@ -74,7 +74,7 @@ export default function Home() {
           disabled={!arg1 || !arg2}
           loading={isLoading}
         />
-        {!arg1 || !arg2 ? "" : <h2>{`sum: ${sum}`}</h2>}
+        {!arg1 || !arg2 ? "" : <h2 className="sumtag">{`sum: ${sum}`}</h2>}
       </div>
     </div>
   );

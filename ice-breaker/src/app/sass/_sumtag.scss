@@ -1,0 +1,11 @@
+.sumtag {
+    position: relative;
+    z-index: 10;
+    transition: 0.5s;
+}
+
+.sumtag:hover {
+    letter-spacing: 0.25em;
+    // box-shadow: 2.5px 5px 10px #409bf0;
+    color: rgb(47, 145, 230);
+}

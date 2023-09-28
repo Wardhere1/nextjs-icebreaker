@@ -23,6 +23,16 @@ body {
 
 }
 
+.dark-mode .inner-content-container {
+    --background-color: $dark-mode;
+    --text-color: #FF671E;
+}
+
+.light-mode .inner-content-container {
+    --background-color: $light-mode;
+    --text-color: $font-color-light-mode;
+}
+
 .inner-content-container {
     display: flex;
     flex-direction: column;
@@ -36,9 +46,9 @@ body {
     border-radius: 20px;
     padding: 70px;
     // box-shadow: 5px 10px 10px;
-    // background-color: plum;
     overflow: hidden;
     border-radius: 33px;
+    background-color: var(--background-color);
 }
 
 .inner-content-container::before {
@@ -53,7 +63,7 @@ body {
 .inner-content-container::after {
     content: "";
     position: absolute;
-    inset: 6px;
+    inset: 11px;
     background: $light-mode;
 }
 
